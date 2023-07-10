@@ -7,6 +7,11 @@ export default mudConfig({
       openAccess: true,
     },
   },
+
+  enums: {
+    TerrainType: ["None", "Rock", "Mine", "Tree", "Player"],
+  },
+
   tables: {
     Counter: {
       schema: {
@@ -14,6 +19,8 @@ export default mudConfig({
       },
       storeArgument: true,
     },
+    
+    TypeTest: "TerrainType",
   },
   modules: [
     {
