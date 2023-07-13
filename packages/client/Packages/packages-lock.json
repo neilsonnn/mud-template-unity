@@ -8,11 +8,11 @@
       "hash": "f2773f585e762480c835ac718b82b87cb111e500"
     },
     "com.emergenceland.unimud": {
-      "version": "https://github.com/emergenceland/unimud.git?path=Packages/UniMUD",
+      "version": "https://github.com/neilsonnn/UniMUD.git?path=Packages/UniMUD",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "111eb56bce483bd4fdd7078ff5a0f1e505df18c9"
+      "hash": "cdb8e19271549c493f2006c90a6239501e2c7fc4"
     },
     "com.unity.ai.navigation": {
       "version": "1.1.3",
@@ -211,6 +211,15 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "study.engine.studio-mud": {
+      "version": "https://github.com/engine-study/studio-mud.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.emergenceland.unimud": "https://github.com/emergenceland/unimud.git?path=Packages/UniMUD"
+      },
+      "hash": "e0044a7986dbc43ed10e7d33d49bc926506b99f8"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
