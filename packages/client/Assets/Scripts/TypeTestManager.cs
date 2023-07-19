@@ -17,15 +17,8 @@ public class TypeTestManager : MonoBehaviour
 	void Start()
 	{
 		net = NetworkManager.Instance;
-		net.OnNetworkInitialized += SubscribeToCounter;
 	}
 
-	private void SubscribeToCounter(NetworkManager _)
-	{
-		_counterSub = ObservableExtensions.Subscribe(TypeTestTable.OnRecordUpdate().ObserveOnMainThread(), OnIncrement);
-	}
-
-	
 	private void Update()
 	{
 		if (Input.GetKeyDown(KeyCode.Space))
@@ -52,7 +45,8 @@ public class TypeTestManager : MonoBehaviour
 		var currentValue = update.TypedValue.Item1;
 		if (currentValue == null) return;
 
-		Debug.Log("Type is now: " + currentValue.value);
+		// Debug.Log("Type is now: " + currentValue.value);
+		Debug.Log(currentValue.value == null ? "Type is null" : "Type is " + (int)(currentValue.value));
 
 	}
 

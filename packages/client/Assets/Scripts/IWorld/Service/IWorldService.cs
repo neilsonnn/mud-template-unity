@@ -78,6 +78,26 @@ namespace IWorld.Service
              return ContractHandler.SendRequestAndWaitForReceiptAsync(callFunction, cancellationToken);
         }
 
+        public Task<string> CreateNewTypeRequestAsync(CreateNewTypeFunction createNewTypeFunction)
+        {
+             return ContractHandler.SendRequestAsync(createNewTypeFunction);
+        }
+
+        public Task<string> CreateNewTypeRequestAsync()
+        {
+             return ContractHandler.SendRequestAsync<CreateNewTypeFunction>();
+        }
+
+        public Task<TransactionReceipt> CreateNewTypeRequestAndWaitForReceiptAsync(CreateNewTypeFunction createNewTypeFunction, CancellationTokenSource cancellationToken = null)
+        {
+             return ContractHandler.SendRequestAndWaitForReceiptAsync(createNewTypeFunction, cancellationToken);
+        }
+
+        public Task<TransactionReceipt> CreateNewTypeRequestAndWaitForReceiptAsync(CancellationTokenSource cancellationToken = null)
+        {
+             return ContractHandler.SendRequestAndWaitForReceiptAsync<CreateNewTypeFunction>(null, cancellationToken);
+        }
+
         public Task<string> DeleteRecordRequestAsync(DeleteRecordFunction deleteRecordFunction)
         {
              return ContractHandler.SendRequestAsync(deleteRecordFunction);

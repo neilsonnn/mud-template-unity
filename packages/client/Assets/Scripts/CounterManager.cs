@@ -17,12 +17,6 @@ public class CounterManager : MonoBehaviour
 	void Start()
 	{
 		net = NetworkManager.Instance;
-		net.OnNetworkInitialized += SubscribeToCounter;
-	}
-
-	private void SubscribeToCounter(NetworkManager _)
-	{
-		_counterSub = ObservableExtensions.Subscribe(CounterTable.OnRecordUpdate().ObserveOnMainThread(), OnIncrement);
 	}
 
 

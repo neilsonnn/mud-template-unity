@@ -40,6 +40,14 @@ namespace IWorld.ContractDefinition
         public virtual byte[] FuncSelectorAndArgs { get; set; }
     }
 
+    public partial class CreateNewTypeFunction : CreateNewTypeFunctionBase { }
+
+    [Function("createNewType")]
+    public class CreateNewTypeFunctionBase : FunctionMessage
+    {
+
+    }
+
     public partial class DeleteRecordFunction : DeleteRecordFunctionBase { }
 
     [Function("deleteRecord")]
@@ -759,6 +767,8 @@ namespace IWorld.ContractDefinition
         [Parameter("address", "system", 1)]
         public virtual string System { get; set; }
     }
+
+
 
 
 
