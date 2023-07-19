@@ -12,7 +12,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "cdb8e19271549c493f2006c90a6239501e2c7fc4"
+      "hash": "3ffc46d35bade9c4a8d015fb8021f2b979448c26"
     },
     "com.unity.ai.navigation": {
       "version": "1.1.3",
@@ -219,7 +219,7 @@
       "dependencies": {
         "com.emergenceland.unimud": "https://github.com/emergenceland/unimud.git?path=Packages/UniMUD"
       },
-      "hash": "e0044a7986dbc43ed10e7d33d49bc926506b99f8"
+      "hash": "f409f356e326bd5c2d42a108f688d1f7c2c0dc56"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
