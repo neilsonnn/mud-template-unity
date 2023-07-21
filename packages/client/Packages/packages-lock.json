@@ -219,7 +219,7 @@
       "dependencies": {
         "com.emergenceland.unimud": "https://github.com/emergenceland/unimud.git?path=Packages/UniMUD"
       },
-      "hash": "2ff97939840ba32a001af79556926fa779d7f129"
+      "hash": "be8264e690c273a4b6e991aa777db70ce1ce47b2"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
